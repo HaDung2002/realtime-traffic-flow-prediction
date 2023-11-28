@@ -42,13 +42,13 @@ We also compared the performance of T-GCN with several baseline models. The sour
 ## Results
 
 <p align="center">
-  <img width="40%" src="./figures/result1.png">
+  <img width="50%" src="./figures/result1.png">
 </p>
 
 Experiment 2 which utilizes both traffic incidents and weather condition have the best performance in general. Although learning with no external data has a good training result just after experiment 2, the test error score is the highest among the 4 experiments. This indicates that the model trained in experiment 1 is the most overfitting one. Between 2 types of auxiliary attributes, the weather seemed to be more helpful in prediction.
 
 <p align="center">
-  <img width="40%" src="./figures/result2.png">
+  <img width="50%" src="./figures/result2.png">
 </p>
 
 The results imply that T-GCN is the best method among baseline models to extract both spatial and temporal relationships from the data.
@@ -57,5 +57,5 @@ The results imply that T-GCN is the best method among baseline models to extract
 Real-time data are streamed via Kafka and raw data is then delivered into Spark streaming-integrated components. After preprocessing data, it is put into trained T-GCN for prediction.
 
 <p align="center">
-  <img width="60%" src="./figures/realtime.png">
+  <img width="70%" src="./figures/realtime.png">
 </p>
